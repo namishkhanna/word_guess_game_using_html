@@ -9,7 +9,7 @@ var questions = [
 
 
 var answer_selected, answer_selected_array = [], count = 0, question_no = 0, score=0, play_flag = false, player_name = "";
-var ques_flag = true,question_no_array = [], score_array = [];
+var ques_flag = true, question_no_array = [], score_array = [];
 
 
 function play_button()
@@ -81,6 +81,7 @@ function question_select()
         document.getElementById("ans").innerHTML=new_answer_selected;
         document.getElementById("hints").innerHTML=hint;
 
+
         var elements = document.getElementsByClassName("keyboard_button");
         for(var i = 0; i < elements.length; i++)
         {
@@ -100,11 +101,17 @@ function question_select()
     }
 
     var ques_score_str = "";
+
     for(i=0;i<question_no_array.length;i++)
     {   
         if(question_no_array[i]=="undefined")
         {
             continue;
+        }
+        if(question_no_array[i]==question_no_array[i-1])
+        {
+            question_no_array.pop();
+            score_array.pop();
         }
         else
         {
