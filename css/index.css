@@ -1,0 +1,210 @@
+body
+{
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#outer
+{
+    padding-top: 10%;
+    padding-bottom: 25%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+#form
+{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: rgb(138, 138, 138);
+}
+
+#name
+{
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    
+}
+
+.btn {
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+.third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+
+.third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+#outergame
+{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#game
+{
+    float: left;
+    width: 54%;
+    margin-right: 3%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 6.5%;
+    background-color: white;
+}
+
+#hint
+{
+    margin-right: 3%;
+    float: left;
+    width: 20%;
+    background-color: white;
+    height: 640px;
+}
+
+#scoreboard
+{
+    float: left;
+    width: 20%;
+    background-color: white;
+    height: 640px;
+}
+
+#scoreboad_list
+{
+    font-size: 150%;
+    text-align: center;
+}
+
+#output1
+{
+    position: absolute;
+    bottom: 0;
+    font-size: 280%;
+    text-align: center;
+    padding-left: 1%;
+    padding-bottom: 3%;
+}
+
+.keyboard_button
+{
+    width: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 0.5%;
+    font-size: large;
+    font-weight : bold;
+}
+
+.keyboard_button:hover 
+{
+    background-color: #a4c6dd;
+    color: black;
+}
+
+#ques_no
+{
+    text-align: center;
+    color: red;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+#ques
+{
+    font-size: 200%;
+    font-weight: bold;
+    font-style: inherit;
+}
+
+#ans
+{
+    font-size: 150%;
+    font-weight: bold;
+    font-style: inherit;
+}
+
+#output
+{
+    font-size: 200%;
+    font-weight: bold;
+    font-style: inherit;
+}
+
+#counter
+{
+    text-align: center;
+    color: red;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+#hints
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 120%;
+    text-align: center;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Word Guess Game</title>
+
+        <link rel="stylesheet" href="./css/index.css">
+
+        <script src="./js/index.js"></script>
+    </head>
+
+    <body>
+
+        <div class="topnav" id="topnav" style="display: none;">
+            <a id="getname"></a>
+            <a href="./index.html" style="position: absolute; right: 0; padding-right: 2%;">Exit</a>
+        </div>
+
+
+        <div id="outer">
+
+            <div id="form">
+
+                <h1>Welcome To</h1>
+                <h2>Word Guess Game</h2>
+
+                <hr/><br/>
+
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <br/>
+
+                <center><button class="btn third" id="play_button" onclick="play_button();question_select();">Play</button></center>
+
+            </div>
+
+        </div>
+        
+
+        <div id="outergame">
+
+            <div id="hint">
+
+                <p style="font-size: 250%; text-align: center;  font-weight: bold;">Question No.</p>
+
+                <p id="ques_no"></p>
+
+                <hr style="width:50%">
+
+                <p style="font-size: 250%; text-align: center;  font-weight: bold;">Chances Left</p>
+
+                <p id="counter"></p>
+
+                <hr style="width:50%">
+
+                <p style="font-size: 250%; text-align: center;  font-weight: bold;">Hint</p>
+
+                <p id="hints"></p>
+
+                <hr style="width:50%">
+
+            </div>
+
+            <div id="game" style="display: none;">
+
+                <p id="ques"></p>
+
+                <p id="ans"></p>
+
+                <p id="output"></p>
+                
+                <div>
+
+                    <div>
+                        <button class="keyboard_button" id="bta" value="A" onclick="key_press(id)">A</button>
+                        <button class="keyboard_button" id="btb" value="B" onclick="key_press(id)">B</button>
+                        <button class="keyboard_button" id="btc" value="C" onclick="key_press(id)">C</button>
+                        <button class="keyboard_button" id="btd" value="D" onclick="key_press(id)">D</button>
+                        <button class="keyboard_button" id="bte" value="E" onclick="key_press(id)">E</button>
+                        <button class="keyboard_button" id="btf" value="F" onclick="key_press(id)">F</button>
+                    </div>
+
+                    <div>
+                        <button class="keyboard_button" id="btg" value="G" onclick="key_press(id)">G</button>
+                        <button class="keyboard_button" id="bth" value="H" onclick="key_press(id)">H</button>
+                        <button class="keyboard_button" id="bti" value="I" onclick="key_press(id)">I</button>
+                        <button class="keyboard_button" id="btj" value="J" onclick="key_press(id)">J</button>
+                        <button class="keyboard_button" id="btk" value="K" onclick="key_press(id)">K</button>
+                        <button class="keyboard_button" id="btl" value="L" onclick="key_press(id)">L</button>
+                    </div>
+
+                    <div>
+                        <button class="keyboard_button" id="btm" value="M" onclick="key_press(id)">M</button>
+                        <button class="keyboard_button" id="btn" value="N" onclick="key_press(id)">N</button>
+                        <button class="keyboard_button" id="bto" value="O" onclick="key_press(id)">O</button>
+                        <button class="keyboard_button" id="btp" value="P" onclick="key_press(id)">P</button>
+                        <button class="keyboard_button" id="btq" value="Q" onclick="key_press(id)">Q</button>
+                        <button class="keyboard_button" id="btr" value="R" onclick="key_press(id)">R</button>
+                    </div>
+
+                    <div>
+                        <button class="keyboard_button" id="bts" value="S" onclick="key_press(id)">S</button>
+                        <button class="keyboard_button" id="btt" value="T" onclick="key_press(id)">T</button>
+                        <button class="keyboard_button" id="btu" value="U" onclick="key_press(id)">U</button>
+                        <button class="keyboard_button" id="btv" value="V" onclick="key_press(id)">V</button>
+                        <button class="keyboard_button" id="btw" value="W" onclick="key_press(id)">W</button>
+                        <button class="keyboard_button" id="btx" value="X" onclick="key_press(id)">X</button>
+                    </div>
+
+                    <div>
+                        <button class="keyboard_button" id="bty" value="Y" onclick="key_press(id)">Y</button>
+                        <button class="keyboard_button" id="btz" value="Z" onclick="key_press(id)">Z</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="scoreboard">  
+
+                <p style="font-size: 250%; text-align: center;  font-weight: bold;">Score Board</p>
+
+                <hr style="width:50%">
+
+                <p id="scoreboad_list"></p>
+                
+                <p id="output1"></p>
+
+            </div>
+            
+            <p style="font-size: 1.5vw; color: #24292e; position:fixed; bottom:0; left:165vh;"><b>Made By: </b><a href="https://linkedin.com/in/namishkhanna"> Namish Khanna </a></p>
+
+        </div>
+
+    </body>
+</html>
