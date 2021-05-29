@@ -18,6 +18,9 @@ function play_button()
     var y = document.getElementById("game");
     var z = document.getElementById("topnav");
     var myobj = document.getElementById("outer");
+    var a = document.getElementById("hint");
+    var b = document.getElementById("scoreboard");
+    var c = document.getElementById("outergame");
 
     if (x.style.display === "none") 
     {
@@ -36,6 +39,21 @@ function play_button()
     if (z.style.display === "none") 
     {
         z.style.display = "block";
+    }
+
+    if (a.style.display === "none") 
+    {
+        a.style.display = "block";
+    }
+
+    if (b.style.display === "none") 
+    {
+        b.style.display = "block";
+    }
+
+    if (c.style.display === "none") 
+    {
+        c.style.display = "block";
     }
     
     player_name = document.getElementById("name").value;
